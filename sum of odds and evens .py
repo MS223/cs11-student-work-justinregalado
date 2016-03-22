@@ -5,8 +5,8 @@ def find_odds(input):
             print (x)
 find_odds(list)
 
-def odd_sum(input):
-    odd_list=[]
+def odd_sum(input): # Go through and add comments, explaining what is happending in your code. 
+    odd_list=[] # for example, why did you add an empty list here?
     for x in list:
         if x % 2 == 1:
             odd_list.append(x)
