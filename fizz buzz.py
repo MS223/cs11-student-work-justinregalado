@@ -1,11 +1,9 @@
 for groot in range(1,101):
-    if groot % 3 == 0: #checking for multiples of 3
-        print('fizz')
-    elif groot % 5 == 0: # checking for multiples of 5
-        print('buzz')
-    elif groot % 3 == 0 and groot % 5 == 0: #checking for multiples of 3 AND 5
+    if groot % 3 == 0 and groot % 5 == 0:#looking for multiples of 3 and 5
         print('fizzbuzz')
+    elif groot % 3 == 0:#looking for multibles of 3
+        print('fizz')
+    elif groot % 5 == 0:#looking for muiltibles of 5
+        print('buzz')
     else:
         print groot
-
-# Why isn't the code finding the multiples of 3 AND 5? What is it checking for first?
