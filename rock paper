@@ -1,0 +1,12 @@
+import random
+
+user_moves=raw_input("give me a move rock , paper, or scissors")
+moves=['rock','paper','scissors']
+computer=(random.choice(moves))
+
+if user_moves== "rocks" and computer_moves== "scissors" or user_moves=="paper" and computer_moves== "rock" or user_moves=="scissors"and computer_moves=="paper":
+    print "you win!!!"
+
+else user_moves== "scissors" and computer_moves== "rock" or user_moves== "rock" and computer_moves== "paper" or user_moves== "paper" and comupter_moves== "scissors":
+    print"you lose"
+# can you ru my code and see whats wrong with it 
