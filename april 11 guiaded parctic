@@ -1,0 +1,28 @@
+def print_only(x):
+   y = x * 2
+   print y
+
+# how is this one different ?
+def return_only(x):
+   y = x * 2
+   return y
+#it has return
+# let's try to use our 2 functions
+# print "running print_only ..."
+# print_only(7)
+
+# print "running return_only ..."
+# return_only(7)
+#
+# print "printing print_only ..."
+# print print_only(7)
+#i dont have any idea
+# print "printing return_only ..."
+# print return_only(7)
+
+# print "using print_only ..."
+# print return_only (7) + 6
+# # you cant add stuff to print
+
+print "using return_only ..."
+print return_only(7) + 6
