@@ -1,3 +1,5 @@
+score1=0
+score2=0
 player_name1=raw_input("player 1 your name ?")
 player_name2=raw_input("player 2 your name?")
 import random
@@ -16,7 +18,23 @@ while len(deck_of_cards)>0:
     a=player_turn(player_name1)
     b=player_turn(player_name2)
     if a>b:
-        print " player 1 you won"
+        print player_name1 + " you won"
+        score1 = score1 +1
 
     elif a<b:
-            print "player 2 you won"
+            print player_name2 + " you won"
+            score2 = score2 +1
+            a=player_turn(player_name1)
+            b=player_turn(player_name2)
+    else:
+        print "TIE"
+        a=player_turn(player_name1)
+        b=player_turn(player_name2)
+print score1
+print score2
+if score1>score2:
+    print "player 1 wins"
+else:
+    print "player 2 wins"
+
+
