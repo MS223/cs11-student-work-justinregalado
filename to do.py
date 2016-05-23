@@ -12,12 +12,15 @@ list_dictionary={
 def add():
     list_dictionary[day].append(action)
 
-while action!= "exit":
-    action=raw_input("what would you like to do today ")
-    day=raw_input("what day ?")
-    add()
+def get (day):
+    print list_dictionary[day]
 
-
-print list_dictionary
-
-# i keep on getting error and its acting up like really acting up :'(
+def choice():
+    user_choice= raw_input("how can i help you")
+    if user_choice == "get":
+        day=raw_input("what day?")
+        get(day)
+    elif user_choice == "add":
+        action=raw_input("what would you like yo add?")
+        add()
+choice()
